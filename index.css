@@ -1,0 +1,77 @@
+/* Desktop Header ---------- */
+
+section {
+  height: 100vh;
+}
+
+.mainPage {
+  background: url(./assets/cofee1.jpeg);
+  background-repeat: no-repeat;
+  background-position: 25% 25%;
+  background-attachment: fixed;
+  background-size: initial;
+}
+
+.mainPage header {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 56px;
+  padding: 24px 0;
+  border-bottom: .1px solid rgba(255, 255, 255, 0.119);
+}
+
+.logoWrapper {
+  color: white;
+}
+
+.mainPage nav {
+  color: white;
+  font-weight: 100;
+  font-size: 1.125rem;
+
+  display: flex;
+  gap: 32px;
+}
+
+/* Desktop Header ---------- */
+
+/* intro page  ---------- */
+
+.intro-chunk-wrapper {
+  height: 80%;
+  padding: 0 56px;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  max-width: 400px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.756);
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+}
+
+.cta {
+  width: fit-content;
+  padding: 12px 20px;
+  margin-top: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.900rem;
+  text-transform: uppercase;
+
+  background: rgb(244, 136, 21);
+  color: white;
+}
+
+/* intro page  ---------- */
