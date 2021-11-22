@@ -94,11 +94,28 @@ section {
   }
 
   .card {
-    flex: 0 1 350px; /* Deconstructed pancake layout */
-    height: 400px;
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
+    flex: 0 1 350px; /* Deconstructed pancake layout */
+
+    height: 400px;
+    padding: 20px;
+    background-color: rgb(75, 23, 1);
     border-radius: 16px;
+  }
+
+  .card-img img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #747171;
+    border-radius: 50%;
+  }
+
+  .card p {
+    text-align: center;
   }
 
 
