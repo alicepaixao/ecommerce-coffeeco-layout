@@ -75,3 +75,32 @@ section {
 }
 
 /* intro page  ---------- */
+
+/* about us page  ---------- */
+  .about-us {
+    background: url(./assets/coffe-beans-2.jpeg);
+    filter: grayscale(50%);
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Deconstructed pancake layout */
+    justify-content: center; 
+    align-items: center;
+
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 0 1 350px; /* Deconstructed pancake layout */
+    height: 400px;
+    background-color: brown;
+
+    border-radius: 16px;
+  }
+
+
+  
+/* about us page  ---------- */
