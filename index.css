@@ -1,3 +1,5 @@
+
+
 /* Desktop Header ---------- */
 
 section {
@@ -8,7 +10,7 @@ section {
   background: url(./assets/cofee1.jpeg);
   background-repeat: no-repeat;
   background-position: 25% 25%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: initial;
 }
 
@@ -37,6 +39,11 @@ section {
 /* Desktop Header ---------- */
 
 /* intro page  ---------- */
+
+.mainPage .gg-menu-motion {
+  display: none;
+  color: white;
+}
 
 .intro-chunk-wrapper {
   height: 80%;
@@ -132,3 +139,39 @@ section {
 
   
 /* about us page  ---------- */
+
+
+/* responsive header and main page  ---------- */
+
+@media (max-width: 1130px) {
+  .about-us {
+    height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .mainPage .gg-menu-motion {
+    display: block;
+  }
+
+  .mainPage nav {
+    display: none;
+  }
+
+  .mainPage {
+    background-position: 35% 30%;
+  }
+
+  .intro-chunk-wrapper {
+    align-items: center;
+    max-width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .title,
+  .description {
+    max-width: 300px;
+    text-align: center;
+  }
+}
