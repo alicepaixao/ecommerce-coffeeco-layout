@@ -72,6 +72,8 @@ section {
 
   background: rgb(244, 136, 21);
   color: white;
+
+  cursor: pointer;
 }
 
 /* intro page  ---------- */
@@ -96,26 +98,35 @@ section {
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    gap: 16px;
 
     flex: 0 1 350px; /* Deconstructed pancake layout */
 
     height: 400px;
-    padding: 20px;
-    background-color: rgb(75, 23, 1);
+    background-color: hsl(18, 80%, 15%);
     border-radius: 16px;
+
+    padding: 16px;
   }
 
   .card-img img {
     width: 150px;
     height: 150px;
-    border: 2px solid #747171;
+    border: 3px solid #747171;
     border-radius: 50%;
+  }
+
+  .card h1 {
+    color: hsl(0, 50%, 85%);
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 
   .card p {
     text-align: center;
+    color: rgba(255, 255, 255, 0.564);
   }
 
 
