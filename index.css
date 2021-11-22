@@ -16,7 +16,7 @@ section {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 56px;
+  margin: 0 72px;
   padding: 24px 0;
   border-bottom: .1px solid rgba(255, 255, 255, 0.119);
 }
@@ -40,7 +40,7 @@ section {
 
 .intro-chunk-wrapper {
   height: 80%;
-  padding: 0 56px;
+  padding-left: 72px;
   max-width: 500px;
 
   display: flex;
