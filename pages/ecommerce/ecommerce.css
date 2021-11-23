@@ -1,0 +1,40 @@
+/* super Header style ---------------- */
+
+.super-header {
+  height: 40px; /* We could use padding */
+  padding-left: 22px;
+  padding-right: 22px;
+  color: hsl(190deg, 5%, 80%);
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  background-color: hsl(18, 80%, 15%);
+
+  display: flex;
+  align-items: center;
+}
+
+.marketing-message {
+  margin-right: auto ;
+}
+
+.label-search {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.input-search {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid hsl(190deg, 5%, 80%);
+  padding-left: 24px;
+  color: hsl(185deg, 5%, 80%);
+  outline-offset: 4px;
+}
+
+  .gg-search {
+  position: absolute; /* especificidade */
+  top: 0;
+  display: inline;
+}
+
+/* super Header style ---------------- */
