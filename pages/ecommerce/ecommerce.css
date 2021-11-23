@@ -11,30 +11,63 @@
 
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
 .marketing-message {
   margin-right: auto ;
 }
 
-.label-search {
+.super-header label {
   position: relative;
-  /* border: 2px solid red; */
+  color: hsla(0, 6%, 80%, 0.571);
 }
 
 .input-search {
   border: none;
   background: transparent;
-  border-bottom: 1px solid hsl(190deg, 5%, 80%);
+  border-bottom: 1px solid hsla(0, 6%, 80%, 0.571);
   padding-left: 24px;
   color: hsl(185deg, 5%, 80%);
   outline-offset: 4px;
+  padding-bottom: 4px;
 }
 
-  .gg-search {
-  position: absolute; /* especificidade */
+.input-search::placeholder {
+  color: hsla(0, 6%, 80%, 0.571);
+  font-size: 0.895rem;
+  padding-left: 4px;
+}
+
+
+.gg-search { /* CSS Icons ----- */
+  box-sizing: border-box;
+  position: absolute;
   top: 0;
-  display: inline;
+  left: 0;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-top: -3px;
+}
+.gg-search::after { /* CSS Icons ----- */
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px
+}
+
+.gg-shopping-cart {
+  color: rgba(201, 206, 207, 0.66);
 }
 
 /* super Header style ---------------- */
