@@ -17,21 +17,31 @@ section {
 .mainPage header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   margin: 0 72px;
-  padding: 24px 0;
+  padding: 4px 0;
   border-bottom: .1px solid rgba(255, 255, 255, 0.119);
 }
 
 .logoWrapper {
   color: white;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+}
+
+.logoWrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .mainPage nav {
   color: white;
   font-weight: 100;
   font-size: 1.125rem;
-
+  margin-bottom: -20px; /* alinhar com o logo */
+ 
   display: flex;
   gap: 32px;
 }
