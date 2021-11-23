@@ -26,7 +26,7 @@ section {
 
 .logoWrapper {
   color: white;
-  width: 200px;
+  width: 130px;
   height: 50px;
   padding: 0;
 }
@@ -46,7 +46,7 @@ section {
   gap: 32px;
 }
 
-nav .action {
+ .cta-link {
   color: hsl(35, 100%, 50%);;
 }
 
@@ -164,7 +164,7 @@ nav .action {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 715px) {
   .mainPage .gg-menu-motion {
     display: block;
   }

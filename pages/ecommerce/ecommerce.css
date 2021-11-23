@@ -1,4 +1,4 @@
-/* super Header style ---------------- */
+/* super Header style ------------------------------------------------------------------------------------- */
 
 .super-header {
   height: 40px; /* We could use padding */
@@ -70,37 +70,58 @@
   color: rgba(201, 206, 207, 0.66);
 }
 
-/* super Header style ---------------- */
+/* super Header style ------------------------------------------------------------------------------------ */
 
-/* Main Header Style ---------------- */
+/* Main Header Style ------------------------------------------------------------------------------------- */
 
 .main-header {
-  padding: 20px 32px;
+  padding: 8px 32px;
+  padding-bottom: 14px;
   border-bottom: 1px solid hsl(190deg, 5%, 80%);
 
   display: flex;
+  align-items: baseline;
+  margin: auto;
 }
 
 .logo-wrapper {
-  width: 150px; /* ajustar logo */
-  height: 44px;
+  width: 160px; /* ajustar logo */
+  height: 50px;
 }
 
 .logo-wrapper img {
   width: 100%;
   height: 100%;
+  margin-bottom: -8px;
 }
 
-.main-header nav {
-
+.nav-links {
+  display: flex;
+  gap: 48px;
+  margin-left: 48px; /* avoid logo collapsing with nav */
 }
 
 .nav-links a {
   color: hsl(220deg, 3%, 20%);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.side {
+  flex: 1; /* usado para alinhar nav-links no centro da página */
+}
 
-/* Main Header Style ---------------- */
+/* Main Header Style ------------------------------------------------------------------------------------- */
+
+
+/* Main products grid Style ------------------------------------------------------------------------------------- */
+
+
+/* Main products grid Style ------------------------------------------------------------------------------------- */
+
+/* Card product Style ------------------------------------------------------------------------------------- */
+
+
+
+/* Card product Style ------------------------------------------------------------------------------------- */
