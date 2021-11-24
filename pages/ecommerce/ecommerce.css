@@ -158,6 +158,7 @@
 .filter-list a {
   color: hsl(220deg, 5%, 40%);
   font-weight: 600;
+  line-height: 2;
 }
 /* Card product Style ------------------------------------------------------------------------------------- */
 
