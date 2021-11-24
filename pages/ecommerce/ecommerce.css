@@ -131,7 +131,8 @@
 .side-nav {
   display: flex; /* breadcrumb e filtros */
   flex-direction: column;
-  flex-basis: 248px;
+  flex-basis: 200px;
+  margin-right: 35px;
 }
 
 .spacer {
@@ -140,16 +141,16 @@
 
 .breadcrumb {
   color: hsl(196deg, 4%, 60%);
-  font-size: 0.875rem;
+  font-size: 0.8em;
 }
 
 .breadcrumb:not(:first-of-type) {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .breadcrumb:not(:first-of-type)::before {
   content: '/';
-  margin-right: 8px;
+  margin-right: 4px;
   color: hsl(190deg, 5%, 80%);
 }
 
@@ -160,9 +161,10 @@
 }
 
 .filter-list a {
-  color: hsl(220deg, 5%, 40%);
+  color: hsl(220deg, 3%, 45%);
   font-weight: 600;
-  line-height: 2;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 /* Card product Style ------------------------------------------------------------------------------------- */
 
@@ -171,12 +173,14 @@
   flex-direction: column;
   flex: 1;
 }
+
 .products-wrapper {
   display: flex;
   flex-direction: row;
   gap: 32px;
   flex-wrap: wrap;
   flex: 1; /* para que ocupe o espaço disponível */
+  min-width: 275px;
 }
 
 .product-card {
@@ -186,7 +190,40 @@
 
 .img-wrapper img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 8px 8px 4px 4px;
+}
+
+.product-infos {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: hsl(220deg, 5%, 40%);
+  font-size: 1rem;
+}
+
+.descount {
+  color:hsl(220deg, 5%, 40%);
+  text-decoration: line-through;
+  text-decoration-color: hsl(196deg, 4%, 60%);
+}
+
+.variant {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lora', serif;
+  color: hsl(196deg, 4%, 60%);
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.variant-name {
+  font-size: 0.9rem;
+}
+
+.promo-price {
+  color: hsl(340deg, 65%, 47%);
 }
 
 
