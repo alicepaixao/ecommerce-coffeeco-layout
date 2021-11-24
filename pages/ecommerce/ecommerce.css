@@ -106,9 +106,31 @@
   font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 }
 
-.nav-links > .active-link {
+.nav-link::after, /* Animation on hover. Specifity problem to solv */
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hsl(220deg, 3%, 20%);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+.nav-link:hover::after, /* Animation on hover. Specifity problem to solv */
+.active-link:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+
+.nav-links > .active-link { 
   color: hsl(35, 100%, 40%);
 }
 
