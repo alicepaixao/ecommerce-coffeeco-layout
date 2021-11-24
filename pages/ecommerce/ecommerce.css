@@ -108,6 +108,10 @@
   text-decoration: none;
 }
 
+.nav-links > .active-link {
+  color: hsl(35, 100%, 40%);
+}
+
 .side {
   flex: 1; /* usado para alinhar nav-links no centro da página */
 }

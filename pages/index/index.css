@@ -36,7 +36,7 @@ section {
   height: 100%;
 }
 
-.mainPage nav {
+.nav-header {
   color: white;
   font-weight: 100;
   font-size: 1.125rem;
@@ -46,7 +46,16 @@ section {
   gap: 32px;
 }
 
- .cta-link {
+.nav-header a { /* Animation to grow when hover */
+  transition: all .2s ease-in-out;
+}
+
+.nav-header a:hover { /* Animation to grow when hover */
+  transform: scale(1.1);
+  font-weight: 400;
+}
+
+nav .cta-link {
   color: hsl(35, 100%, 50%);;
 }
 
@@ -87,14 +96,21 @@ section {
   width: fit-content;
   padding: 12px 20px;
   margin-top: 16px;
+  border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.900rem;
   text-transform: uppercase;
 
-  background: rgb(244, 136, 21);
+  background: hsl(31, 91%, 52%);
   color: white;
 
   cursor: pointer;
+  transition: all .2s ease-in-out; /* Animation to grow when hover */
+}
+
+.cta:hover {
+  opacity: 0.9;
+  transform: scale(1.1); 
 }
 
 /* intro page  ---------- */
@@ -165,8 +181,19 @@ section {
 }
 
 @media (max-width: 715px) {
-  .mainPage .gg-menu-motion {
+  .mainPage header {
+    align-items: center;
+  }
+
+  .mainPage .gg-menu-motion { /* especifity problem */
     display: block;
+    margin-bottom: -10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .gg-menu-motion:hover {
+    transform: scale(1.3);
   }
 
   .mainPage nav {
