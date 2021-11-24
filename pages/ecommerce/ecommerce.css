@@ -166,6 +166,10 @@
   font-size: 0.8em;
 }
 
+.breadcrumb:hover {
+  color: hsl(220deg, 3%, 20%);
+}
+
 .breadcrumb:not(:first-of-type) {
   margin-left: 4px;
 }
@@ -187,6 +191,10 @@
   font-weight: 600;
   font-size: 0.9rem;
   line-height: 1.8;
+}
+
+.filter-list a:hover {
+  color: hsl(190deg, 5%, 80%);
 }
 /* Card product Style ------------------------------------------------------------------------------------- */
 
