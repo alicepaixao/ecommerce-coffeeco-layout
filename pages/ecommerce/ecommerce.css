@@ -138,8 +138,8 @@
   display: none;
 }
 
-.side {
-  flex: 1; /* usado para alinhar nav-links no centro da página */
+.side { /* usado para alinhar nav-links no centro da página */
+  flex: 1;
 }
 
 /* Main Header Style ------------------------------------------------------------------------------------- */
@@ -297,6 +297,8 @@ input[type="radio"] {
 
 /* Filtro css html puro ------------------------------------------------------------------------------------- */
 
+/* Responsividade desktop firsr ---------------------------------------------------------------------------- */
+
 @media (max-width: 1070px) {
   .nav-links {
     gap: 32px;
@@ -327,7 +329,7 @@ input[type="radio"] {
     flex-basis: 100px;
   }
 
-  .side:last-of-type {
+  .side:last-of-type { /* spacer component with flex: 1 */
     display: none;
   }
 
@@ -337,6 +339,17 @@ input[type="radio"] {
 
   .main-header .gg-menu-motion {
     display: block;
+  }
+
+  .main-header .gg-menu-motion { /* especifity problem */
+    display: block;
+    margin-bottom: -10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .gg-menu-motion:hover {
+    transform: scale(1.3);
   }
 
   .spacer {
