@@ -35,3 +35,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* CSS reset ---------------------------------------------------*/
+
+footer {
+  background-color: hsl(220deg, 5%, 80%);
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.copy-link {
+  color: black;
+}
+
+@media (max-width: 430px) {
+  footer {
+    font-size: 0.8rem;
+    gap: 16px;
+  }
+}
