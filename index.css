@@ -7,7 +7,7 @@ section {
 }
 
 .mainPage {
-  background: url(../../assets/cofee1.jpeg);
+  background: url(./assets/cofee1.jpeg);
   background-repeat: no-repeat;
   background-position: 25% 25%;
   /* background-attachment: fixed; */
@@ -117,7 +117,7 @@ nav .cta-link {
 
 /* about us page  ---------- */
   .about-us {
-    background: url(../../assets/coffe-beans-2.jpeg);
+    background: url(./assets/coffe-beans-2.jpeg);
     filter: grayscale(50%);
   }
 
