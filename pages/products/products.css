@@ -1,0 +1,126 @@
+/* Header style ------------------------------------------------ */
+
+.main-header {
+  padding: 8px 32px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid hsl(190deg, 5%, 80%);
+
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+}
+
+.logo-wrapper {
+  width: 160px; /* ajustar logo */
+  height: 50px;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+  margin-left: 48px; /* avoid logo collapsing with nav */
+}
+
+.nav-links a {
+  color: hsl(220deg, 3%, 20%);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after, /* Animation on hover. Specifity problem to solv */
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hsl(220deg, 3%, 20%);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+.nav-link:hover::after, /* Animation on hover. Specifity problem to solv */
+.active-link:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+
+.nav-links > .active-link { 
+  color: hsl(35, 100%, 40%);
+}
+
+.main-header .gg-menu-motion {
+  display: none;
+}
+
+.side { /* usado para alinhar nav-links no centro da página */
+  flex: 1;
+}
+
+/* Header style ------------------------------------------------ * /
+
+
+/* Responsive style ------------------------------------------------ */
+
+@media (max-width: 1070px) {
+  .nav-links {
+    gap: 32px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 890px) {
+
+  .main-header {
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .side:last-of-type { /*spacer component with flex: 1*/
+    display: none;
+  }
+
+  .main-header .gg-menu-motion {
+    display: block;
+  }
+
+  .main-header .gg-menu-motion { /* especifity problem */
+    display: block;
+    margin-bottom: -10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .gg-menu-motion:hover {
+    transform: scale(1.3);
+  }
+
+  .spacer {
+    margin-bottom: 16px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+}
+
+/* Responsive style ------------------------------------------------ * /
