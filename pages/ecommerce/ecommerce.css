@@ -293,6 +293,64 @@ input[type="radio"] {
 
 /* Filtro css html puro ------------------------------------------------------------------------------------- */
 
+@media (max-width: 1070px) {
+  .nav-links {
+    gap: 32px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 890px) {
+
+  .super-header {
+    font-size: 0.7rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 32px 32px;
+  }
+
+  .label-search {
+    /* display: none; */
+  }
+
+  .nav-links {
+    display: none;
+  }
+  
+  .side-nav {
+    flex-basis: 100px;
+  }
+
+  .spacer {
+    margin-bottom: 16px;
+  }
+
+  .filter-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .label-search,
+  .gg-shopping-cart {
+    display: none;
+  }
+
+  .filter-list {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 16px;
+  }
+  
+}
 
 
 
