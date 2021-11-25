@@ -186,14 +186,15 @@
   align-items: flex-start;
 }
 
-.filter-list a {
+.filter-list label {
   color: hsl(220deg, 3%, 45%);
   font-weight: 600;
   font-size: 0.9rem;
   line-height: 1.8;
+  cursor: pointer;
 }
 
-.filter-list a:hover {
+.filter-list label:hover {
   color: hsl(190deg, 5%, 80%);
 }
 /* Card product Style ------------------------------------------------------------------------------------- */
@@ -260,6 +261,37 @@
 
 
 /* Card product Style ------------------------------------------------------------------------------------- */
+
+
+/* Filtro css html puro ------------------------------------------------------------------------------------- */
+/* suaves medios intensos products-wrapper */
+
+input[type="radio"] {
+  position: absolute;
+  left: -99999px;
+}
+
+#btn-todos:checked ~ #products-wrapper .product-card {
+  display: block;
+}
+
+#btn-suaves:checked ~ #products-wrapper .medios,
+#btn-suaves:checked ~ #products-wrapper .intensos {
+ display: none;
+}
+
+#btn-medios:checked ~ #products-wrapper .suaves,
+#btn-medios:checked ~ #products-wrapper .intensos {
+ display: none;
+}
+
+#btn-intensos:checked ~ #products-wrapper .suaves,
+#btn-intensos:checked ~ #products-wrapper .medios {
+ display: none;
+}
+
+
+/* Filtro css html puro ------------------------------------------------------------------------------------- */
 
 
 
