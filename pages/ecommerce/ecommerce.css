@@ -134,6 +134,10 @@
   color: hsl(35, 100%, 40%);
 }
 
+.main-header .gg-menu-motion {
+  display: none;
+}
+
 .side {
   flex: 1; /* usado para alinhar nav-links no centro da página */
 }
@@ -315,16 +319,24 @@ input[type="radio"] {
     padding: 32px 32px;
   }
 
-  .label-search {
-    /* display: none; */
-  }
-
   .nav-links {
     display: none;
   }
   
   .side-nav {
     flex-basis: 100px;
+  }
+
+  .side:last-of-type {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: space-between;
+  }
+
+  .main-header .gg-menu-motion {
+    display: block;
   }
 
   .spacer {
