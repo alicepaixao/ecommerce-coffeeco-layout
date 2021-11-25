@@ -68,7 +68,105 @@
   flex: 1;
 }
 
-/* Header style ------------------------------------------------ * /
+/* Header style ------------------------------------------------ */
+
+
+/* Main style ------------------------------------------------ */
+
+
+.main-wrapper {
+  height: 88vh;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center ;
+
+  padding: 40px;
+}
+
+.img-wrapper {
+  flex: 1;
+  flex-basis: 0px;
+  min-width: 400px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  border-radius: 10px 10px 8px 8px;
+}
+
+.product-infos-wrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.product-type {
+  font-size: 0.8rem;
+  color: hsl(35, 100%, 40%);
+}
+
+.product-description {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-family: 'Lora', serif;
+  color: hsl(196deg, 4%, 50%);
+}
+
+.price {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: hsl(220deg, 5%, 40%);
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.actions {
+  margin-top: 32px;
+}
+
+.descount {
+  color:hsl(220deg, 5%, 40%);
+  text-decoration: line-through;
+  text-decoration-color: hsl(196deg, 4%, 60%);
+}
+
+.promo-price {
+  color: hsl(340deg, 65%, 47%);
+}
+
+input {
+  text-align: center;
+  padding: 13px 32px;
+  border: none;
+  background-color: hsl(185deg, 5%, 95%);
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.cta {
+  width: fit-content;
+  padding: 12px 20px;
+  margin-top: 16px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.900rem;
+  text-transform: uppercase;
+
+  background: hsl(31, 91%, 52%);
+  color: white;
+
+  cursor: pointer;
+  transition: all .2s ease-in-out; /* Animation to grow when hover */
+}
+
+.cta:hover {
+  opacity: 0.9;
+  transform: scale(1.1); 
+}
+
+
+
+/* Main style ------------------------------------------------ */
 
 
 /* Responsive style ------------------------------------------------ */
