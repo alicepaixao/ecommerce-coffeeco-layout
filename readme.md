@@ -1,6 +1,6 @@
 # CoffeCo
 
-Feito com ♥ by [Pietro Weg](www.linkedin/com/pwsera)  
+Feito com ♥ by [Pietro Weg](https://www.linkedin.com/in/pwsera/)  
 
 Acesse o projeto [AQUI!](https://pwsera.github.io/ecommerce-coffeeco-layout/)
 
