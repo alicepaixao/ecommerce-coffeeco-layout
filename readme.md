@@ -8,9 +8,9 @@ Acesse o projeto [AQUI!](https://pwsera.github.io/ecommerce-coffeeco-layout/)
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 <p align="center">
-  <img src="./assets/images-markdown/capa-inicio.jpeg" alt="exemplo imagem" width="300px">
-<img src="./assets/images-markdown/capa-ecommerce.jpeg" alt="exemplo imagem" width="300px">
-<img src="./assets/images-markdown/capa-produtor.jpeg" alt="exemplo imagem" width="300px">
+  <img src="./assets/images-markdown/capa-inicio.jpeg" alt="exemplo imagem" width="310px">
+  <img src="./assets/images-markdown/capa-ecommerce.jpeg" alt="exemplo imagem" width="310px">
+  <img src="./assets/images-markdown/capa-produtor.jpeg" alt="exemplo imagem" width="301px">
 </p>
 
 
